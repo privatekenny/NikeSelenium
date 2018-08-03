@@ -3,6 +3,6 @@
   "password":"",
   "firstN":"",
   "lastN":"",
-  "dob":"",
+  "dob":"mm/dd/yyyy",
   "amount":"5"
 }
