@@ -37,10 +37,10 @@ def main():
 
         chrome_options = webdriver.ChromeOptions()
 
-		# window size
+	# window size
         chrome_options.add_argument("window-size=1100,900")
 
-		# proxy setting
+	# proxy setting
         chrome_options.add_extension(ext+"\SMS\extension_2_0_0_0.crx");
 
         driver = webdriver.Chrome(chrome_options=chrome_options, executable_path = desktop+'/chromedriver.exe')
@@ -71,7 +71,7 @@ def main():
         driver.find_element_by_name('password').send_keys(password)
         driver.find_element_by_name('firstName').send_keys(firstname)
         driver.find_element_by_name('lastName').send_keys(lastname)
-        driver.find_element_by_name('dateOfBirth').send_keys('')
+        driver.find_element_by_name('dateOfBirth').send_keys(dob)
         driver.find_element_by_xpath("//span[text()='Male']").click()
         driver.find_element_by_class_name('checkbox').click()
         driver.find_element_by_xpath("//*[@value='CREATE ACCOUNT']").click()
